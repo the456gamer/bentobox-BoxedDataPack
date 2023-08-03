@@ -3,11 +3,68 @@
   <component name="JsonSchemaMappingsProjectConfiguration">
     <state>
       <map>
-        <entry key="pack.mcmeta">
+        <entry key="Data Pack: Advancement">
           <value>
             <SchemaInfo>
               <option name="generatedName" value="New Schema" />
-              <option name="name" value="pack.mcmeta" />
+              <option name="name" value="Data Pack: Advancement" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-advancement.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="BoxedDataPack/data/*/advancements/**.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Data Pack: Recipe">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Data Pack: Recipe" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-recipe.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="BoxedDataPack/data/*/recipes/**.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Data Pack: Tag">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Data Pack: Tag" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/minecraft-tag.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="BoxedDataPack/data/*/tags/**.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Data Pack: pack.mcmeta">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Data Pack: pack.mcmeta" />
               <option name="relativePathToSchema" value="schemas/pack-mcmeta.json" />
               <option name="schemaVersion" value="JSON Schema version 7" />
               <option name="patterns">
