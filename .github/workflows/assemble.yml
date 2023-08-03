@@ -1,0 +1,78 @@
+name: Assemble Datapack
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.20"
+          cache: false # only caches go projects, not general go pkgs
+      - name: get go cache env
+        id: go-cache-env
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "GOMODCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOMODCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+          echo "GOCACHE<<$EOF" >> $GITHUB_ENV
+          go env GOCACHE >> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+
+      - name: cache go
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{env.GOMODCACHE}}
+            ${{env.GOCACHE}}
+          key: ${{ runner.os }}-gomod
+
+      - name: install yajsv
+        run: go install github.com/neilpa/yajsv@v1.4.1
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: cache schemas
+        uses: actions/cache@v3
+        with:
+          path: | 
+            schemas/
+          key: ${{ runner.os }}-schemas
+
+      - name: fetch Schemas
+        run: |
+          curl -o schemas/advancement.json https://json.schemastore.org/minecraft-advancement.json
+          curl -o schemas/tag.json https://json.schemastore.org/minecraft-tag.json
+          curl -o schemas/recipe.json https://json.schemastore.org/minecraft-recipe.json
+          # Disabled due to older version. downloaded and edited manually
+          #curl -o schemas/pack-mcmeta.json https://json.schemastore.org/minecraft-pack-mcmeta.json
+          
+
+      - name: Verify pack.mcmeta
+        run: |
+          yajsv -s schemas/pack-mcmeta.json -q "BoxedDataPack/pack.mcmeta"
+
+      - name: Verify Advancements
+        run: |
+          python -c 'from glob import glob;globfile = open("globs.txt", "w");globfile.writelines(filename + "\n" for filename in glob("BoxedDataPack/data/*/advancements/**/*.json", recursive=True));globfile.close()'
+          yajsv -s schemas/advancement.json -q -l globs.txt
+          rm globs.txt
+
+      - name: Verify Tags
+        run: |
+          python -c 'from glob import glob;globfile = open("globs.txt", "w");globfile.writelines(filename + "\n" for filename in glob("BoxedDataPack/data/*/tags/**/*.json", recursive=True));globfile.close()'
+          yajsv -s schemas/tag.json -q -l globs.txt
+          rm globs.txt
+
+      - name: Verify Recipes
+        run: |
+          python -c 'from glob import glob;globfile = open("globs.txt", "w");globfile.writelines(filename + "\n" for filename in glob("BoxedDataPack/data/*/recipes/**/*.json", recursive=True));globfile.close()'
+          yajsv -s schemas/recipe.json -q -l globs.txt
+          rm globs.txt
