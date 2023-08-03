@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "stained_terracotta",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "terracotta"
+    },
+    "X": {
+      "item": "gray_dye"
+    }
+  },
+  "result": {
+    "item": "gray_terracotta",
+    "count": 8
+  }
+}

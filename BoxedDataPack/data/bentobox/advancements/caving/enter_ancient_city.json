@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "reinforced_deepslate"
+    },
+    "title": "Ancient City Adventurer",
+    "description": "Enter an ancient city",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/deep_dark",
+  "criteria": {
+    "ancient_city": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "ancient_city"
+          }
+        }
+      }
+    }
+  }
+}

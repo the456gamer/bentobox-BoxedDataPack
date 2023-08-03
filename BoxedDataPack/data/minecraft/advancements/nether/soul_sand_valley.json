@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "soul_soil"
+    },
+    "title": "Valley of the Dead",
+    "description": "Enter a soul sand valley",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:nether/root",
+  "criteria": {
+    "valley": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "soul_sand_valley"
+          }
+        }
+      }
+    }
+  }
+}

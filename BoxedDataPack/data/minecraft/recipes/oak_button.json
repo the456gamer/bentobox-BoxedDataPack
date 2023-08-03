@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "oak_planks"
+    }
+  ],
+  "result": {
+    "item": "oak_button",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "stone"
+    }
+  },
+  "result": {
+    "item": "stone_pressure_plate",
+    "count": 4
+  }
+}

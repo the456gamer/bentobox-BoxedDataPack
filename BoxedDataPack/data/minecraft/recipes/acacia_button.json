@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "acacia_planks"
+    }
+  ],
+  "result": {
+    "item": "acacia_button",
+    "count": 4
+  }
+}

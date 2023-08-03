@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "trapped_chest",
+  "ingredients": [
+    {
+      "item": "chest"
+    },
+    {
+      "item": "tripwire_hook"
+    }
+  ],
+  "result": {
+    "item": "trapped_chest"
+  }
+}

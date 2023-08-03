@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "campfire"
+    },
+    "title": "Crackling Cook",
+    "description": "Cook something on a campfire",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/poke_poke",
+  "criteria": {
+    "cook": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "custom",
+                "stat": "interact_with_campfire",
+                "value": {
+                  "min": 1
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

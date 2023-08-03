@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "category": "misc",
+  "group": "carpet",
+  "pattern": [
+    "###",
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "wool_carpets"
+    },
+    "$": {
+      "item": "blue_dye"
+    }
+  },
+  "result": {
+    "item": "blue_carpet",
+    "count": 8
+  }
+}

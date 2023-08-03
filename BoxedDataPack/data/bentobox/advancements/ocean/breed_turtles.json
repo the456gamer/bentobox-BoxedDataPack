@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "seagrass"
+    },
+    "title": "Protective Parents",
+    "description": "Breed some turtles",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/green_in_the_blue",
+  "criteria": {
+    "breed_turtle": {
+      "trigger": "bred_animals",
+      "conditions": {
+        "parent": {
+          "type": "turtle"
+        }
+      }
+    }
+  }
+}

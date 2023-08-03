@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:shroomlight"
+    },
+    "title": "Mycelium Luminary",
+    "description": "Light up the area with shroomlights",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/torch",
+  "criteria": {
+    "shroomlight": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:shroomlight"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

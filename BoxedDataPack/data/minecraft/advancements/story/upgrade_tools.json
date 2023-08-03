@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:story/mine_stone",
+  "criteria": {
+    "stone_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stone_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.story.upgrade_tools.description"
+    },
+    "icon": {
+      "item": "stone_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.story.upgrade_tools.title"
+    }
+  }
+}

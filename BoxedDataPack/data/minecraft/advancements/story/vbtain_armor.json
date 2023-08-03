@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "iron_chestplate"
+    },
+    "title": {
+      "translate": "advancements.story.obtain_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.obtain_armor.description"
+    },
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:story/smelt_iron",
+  "criteria": {
+    "iron_armor": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:iron_armor"
+          }
+        ]
+      }
+    }
+  }
+}

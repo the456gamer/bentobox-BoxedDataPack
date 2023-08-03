@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_axe"
+    },
+    "title": "Ignored Gold",
+    "description": "Be hurt by a piglin brute while wearing gold armor",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:nether_structures/bastion",
+  "criteria": {
+    "piglin_brute": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "dealt": 0,
+          "taken": {
+            "min": 1,
+            "max": 20
+          },
+          "source_entity": {
+            "type": "minecraft:piglin_brute"
+          }
+        }
+      }
+    }
+  }
+}

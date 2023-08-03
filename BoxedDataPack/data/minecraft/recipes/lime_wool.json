@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "lime_dye"
+    },
+    {
+      "tag": "wool"
+    }
+  ],
+  "result": {
+    "item": "lime_wool"
+  }
+}

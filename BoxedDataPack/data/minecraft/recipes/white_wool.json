@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "white_dye"
+    },
+    {
+      "tag": "wool"
+    }
+  ],
+  "result": {
+    "item": "white_wool"
+  }
+}

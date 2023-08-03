@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "granite",
+  "ingredients": [
+    {
+      "item": "diorite"
+    },
+    {
+      "item": "quartz"
+    }
+  ],
+  "result": {
+    "item": "granite"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt_minecart"
+    },
+    "title": "Mobile Explosion",
+    "description": "Put TNT in a minecart",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:redstone/tnt",
+  "criteria": {
+    "tnt_minecart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tnt_minecart"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "purple_dye",
+  "ingredients": [
+    {
+      "item": "blue_dye"
+    },
+    {
+      "item": "red_dye"
+    }
+  ],
+  "result": {
+    "item": "purple_dye",
+    "count": 2
+  }
+}

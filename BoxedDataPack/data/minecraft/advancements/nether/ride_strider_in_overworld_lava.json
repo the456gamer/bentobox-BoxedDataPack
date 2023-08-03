@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:nether/ride_strider",
+  "criteria": {
+    "ride_entity_distance": {
+      "conditions": {
+        "distance": {
+          "horizontal": {
+            "min": 50
+          }
+        },
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "dimension": "overworld"
+              },
+              "vehicle": {
+                "type": "strider"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "ride_entity_in_lava"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.nether.ride_strider_in_overworld_lava.description"
+    },
+    "icon": {
+      "item": "warped_fungus_on_a_stick"
+    },
+    "title": {
+      "translate": "advancements.nether.ride_strider_in_overworld_lava.title"
+    }
+  }
+}

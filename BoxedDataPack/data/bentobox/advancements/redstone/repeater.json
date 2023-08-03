@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:repeater"
+    },
+    "title": "Repeat Yourself",
+    "description": "Extend a signal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:redstone/redstone_torch",
+  "criteria": {
+    "repeater": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:repeater"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

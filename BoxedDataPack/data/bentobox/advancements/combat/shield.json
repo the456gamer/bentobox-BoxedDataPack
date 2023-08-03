@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "shield"
+    },
+    "title": "Come back with your shield - or on it!",
+    "description": "Protect yourself with a shield",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/root",
+  "criteria": {
+    "block": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": true
+        }
+      }
+    }
+  }
+}

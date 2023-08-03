@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blast_furnace"
+    },
+    "title": "Blast Craft",
+    "description": "Craft a blast furnace to smelt your ores faster",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/root",
+  "criteria": {
+    "blast_furnace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blast_furnace"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

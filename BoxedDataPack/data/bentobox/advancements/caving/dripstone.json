@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "title": "Stalagmite Stumbler",
+    "description": "Fall on the tip of pointed dripstone",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/in_gravel",
+  "criteria": {
+    "dripstone": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "bentobox:stalagmite",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

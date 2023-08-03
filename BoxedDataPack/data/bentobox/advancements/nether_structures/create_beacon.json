@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "beacon"
+    },
+    "title": {
+      "translate": "advancements.nether.create_beacon.title"
+    },
+    "description": "Construct and activate a beacon",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:nether_structures/summon_wither",
+  "criteria": {
+    "beacon": {
+      "trigger": "construct_beacon",
+      "conditions": {
+        "level": {
+          "min": 1
+        }
+      }
+    }
+  }
+}

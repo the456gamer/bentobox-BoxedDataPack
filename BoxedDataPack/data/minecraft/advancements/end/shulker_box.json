@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "shulker_box"
+    },
+    "title": "Portable Storage",
+    "description": "Craft a shulker box",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:end/find_end_city",
+  "criteria": {
+    "shulker_box": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:shulker_boxes"
+          }
+        ]
+      }
+    }
+  }
+}

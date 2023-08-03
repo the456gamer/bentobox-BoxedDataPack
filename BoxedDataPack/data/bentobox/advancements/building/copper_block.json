@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:copper_block"
+    },
+    "title": "Copper Connoisseur",
+    "description": "Build with fresh copper blocks",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/copper",
+  "criteria": {
+    "copper": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:copper_block"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "diamond_helmet"
+    },
+    "title": "Combat",
+    "description": "He will win who knows when to fight and when not to fight.",
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "player_killed_entity"
+    },
+    "killed": {
+      "trigger": "entity_killed_player"
+    }
+  },
+  "requirements": [
+    [
+      "kill",
+      "killed"
+    ]
+  ]
+}

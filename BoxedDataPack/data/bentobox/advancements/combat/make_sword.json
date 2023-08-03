@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "wooden_sword"
+    },
+    "title": "Time to Strike!",
+    "description": "Craft a sword",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/root",
+  "criteria": {
+    "sword": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:swords"
+          }
+        ]
+      }
+    }
+  }
+}

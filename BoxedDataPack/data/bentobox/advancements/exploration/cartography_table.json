@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "cartography_table"
+    },
+    "title": "Map Maker",
+    "description": "Create a cartography table",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/map_create",
+  "criteria": {
+    "cartography_table": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cartography_table"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

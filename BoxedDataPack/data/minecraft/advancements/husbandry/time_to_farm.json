@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "wooden_hoe"
+    },
+    "title": "Time to Farm!",
+    "description": "Craft a hoe",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "hoe": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:hoes"
+          }
+        ]
+      }
+    }
+  }
+}

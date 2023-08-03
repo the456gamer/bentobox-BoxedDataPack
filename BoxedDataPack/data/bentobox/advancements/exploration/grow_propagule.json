@@ -1,0 +1,72 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:mangrove_propagule"
+    },
+    "title": "Mangroovy",
+    "description": "Use bone meal to grow a mangrove propagule from mangrove leaves",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/lily_pad",
+  "criteria": {
+    "leaves": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:bone_meal"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:mangrove_leaves"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "propagule": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:bone_meal"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:mangrove_propagule"
+                ],
+                "state": {
+                  "hanging": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "leaves",
+      "propagule"
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "polished_blackstone"
+    }
+  ],
+  "result": {
+    "item": "polished_blackstone_button",
+    "count": 4
+  }
+}

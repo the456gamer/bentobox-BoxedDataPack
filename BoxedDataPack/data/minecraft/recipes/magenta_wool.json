@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "magenta_dye"
+    },
+    {
+      "tag": "wool"
+    }
+  ],
+  "result": {
+    "item": "magenta_wool"
+  }
+}

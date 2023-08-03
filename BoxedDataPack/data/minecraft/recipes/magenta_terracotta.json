@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "stained_terracotta",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "terracotta"
+    },
+    "X": {
+      "item": "magenta_dye"
+    }
+  },
+  "result": {
+    "item": "magenta_terracotta",
+    "count": 8
+  }
+}

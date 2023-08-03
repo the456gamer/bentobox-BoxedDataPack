@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "iron_sword"
+    },
+    "title": "Etheral Soldiers",
+    "description": "Kill a vex",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/evoker_fangs",
+  "criteria": {
+    "kill_vex": {
+      "trigger": "player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "vex"
+        }
+      }
+    }
+  }
+}

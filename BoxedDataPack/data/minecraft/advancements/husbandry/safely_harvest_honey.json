@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": {
+      "translate": "advancements.husbandry.safely_harvest_honey.title"
+    },
+    "description": "Harvest honey without aggravating the bees",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:husbandry/silk_touch_nest",
+  "criteria": {
+    "harvest_honey": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:glass_bottle"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "smokey": true,
+              "block": {
+                "tag": "minecraft:beehives"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

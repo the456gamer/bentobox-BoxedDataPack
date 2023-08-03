@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "mangrove_planks"
+    }
+  ],
+  "result": {
+    "item": "mangrove_button",
+    "count": 4
+  }
+}

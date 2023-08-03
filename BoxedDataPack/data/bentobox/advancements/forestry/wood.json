@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_oak_wood"
+    },
+    "title": "Woof",
+    "description": "Create a block of bark",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/root",
+  "criteria": {
+    "wood": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:woods"
+          }
+        ]
+      }
+    }
+  }
+}

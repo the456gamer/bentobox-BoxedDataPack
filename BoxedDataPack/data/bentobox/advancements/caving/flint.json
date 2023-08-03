@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "flint"
+    },
+    "title": "Flint finder",
+    "description": "Collect flint",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/in_gravel",
+  "criteria": {
+    "flint": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "flint"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

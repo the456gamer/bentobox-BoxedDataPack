@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:smoker"
+    },
+    "title": "Fast Food",
+    "description": "Make a smoker to cook your food faster",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/meat",
+  "criteria": {
+    "smoker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:smoker"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

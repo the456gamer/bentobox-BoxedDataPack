@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "acacia_planks"
+    }
+  },
+  "result": {
+    "item": "acacia_stairs",
+    "count": 8
+  }
+}

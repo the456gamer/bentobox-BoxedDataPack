@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_oak_planks"
+    },
+    "title": "Gold Rush",
+    "description": "Enter a mineshaft on the surface of a badlands biome",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/badlands",
+  "criteria": {
+    "mineshaft": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "mineshaft_mesa"
+          }
+        }
+      }
+    }
+  }
+}

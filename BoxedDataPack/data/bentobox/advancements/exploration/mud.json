@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:mud"
+    },
+    "title": "It's a Mud, Mud, Mud, Mud World",
+    "description": "Turn dirt into mud",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/swamp_find",
+  "criteria": {
+    "mud": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "potion": "minecraft:water"
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:mud"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

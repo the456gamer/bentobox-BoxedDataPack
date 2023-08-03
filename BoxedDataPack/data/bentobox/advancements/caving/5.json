@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:music_disc_5"
+    },
+    "title": "Spooky Disc Jockey",
+    "description": "Play the \"5\" music disc",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/recovery_compass",
+  "criteria": {
+    "5": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:music_disc_5"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:jukebox"
+                ],
+                "state": {
+                  "has_record": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

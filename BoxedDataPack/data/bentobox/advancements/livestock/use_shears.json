@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "shears"
+    },
+    "title": "Shear Audacity",
+    "description": "Shear a sheep",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/root",
+  "criteria": {
+    "shears": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "sheep"
+        },
+        "item": {
+          "items": [
+            "shears"
+          ]
+        }
+      }
+    }
+  }
+}

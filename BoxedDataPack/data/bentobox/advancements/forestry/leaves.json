@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_oak_leaves"
+    },
+    "title": "Hedge Fund",
+    "description": "Collect some leaves",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/sapling",
+  "criteria": {
+    "leaves": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "leaves"
+          }
+        ]
+      }
+    }
+  }
+}

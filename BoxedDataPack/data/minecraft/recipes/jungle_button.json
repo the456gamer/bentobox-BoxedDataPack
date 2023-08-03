@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "jungle_planks"
+    }
+  ],
+  "result": {
+    "item": "jungle_button",
+    "count": 4
+  }
+}

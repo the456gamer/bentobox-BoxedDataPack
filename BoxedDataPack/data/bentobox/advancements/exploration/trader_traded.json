@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "blue_dye"
+    },
+    "title": "Meandering Merchant",
+    "description": "Trade with a wandering trader",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/root",
+  "criteria": {
+    "trade": {
+      "trigger": "villager_trade",
+      "conditions": {
+        "villager": {
+          "type": "wandering_trader"
+        }
+      }
+    }
+  }
+}

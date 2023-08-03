@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "bamboo"
+    },
+    "title": "Bamboo Baby",
+    "description": "Breed some pandas",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/jungle_tree",
+  "criteria": {
+    "breed_panda": {
+      "trigger": "bred_animals",
+      "conditions": {
+        "parent": {
+          "type": "panda"
+        }
+      }
+    }
+  }
+}

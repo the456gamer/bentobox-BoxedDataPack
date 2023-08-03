@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "glow_ink_sac"
+    },
+    "title": "Natural Light",
+    "description": "Collect some glowing ink from a glow squid",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/ink",
+  "criteria": {
+    "glow_ink": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "glow_ink_sac"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

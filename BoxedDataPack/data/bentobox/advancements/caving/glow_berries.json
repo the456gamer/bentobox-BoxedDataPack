@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:glow_berries"
+    },
+    "title": "Cavevine Horticulturist",
+    "description": "Use bone meal to grow berries on cave vines",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/dripleaf",
+  "criteria": {
+    "grow_berries": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:bone_meal"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:cave_vines"
+                ],
+                "state": {
+                  "berries": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

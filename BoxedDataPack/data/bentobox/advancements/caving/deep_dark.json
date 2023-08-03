@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "sculk"
+    },
+    "title": "Creepy Listeners",
+    "description": "Enter the deep dark",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/root",
+  "criteria": {
+    "deep_dark": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "deep_dark"
+          }
+        }
+      }
+    }
+  }
+}

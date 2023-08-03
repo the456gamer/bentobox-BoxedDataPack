@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "stained_glass",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "bentobox:dyeable_glasses"
+    },
+    "X": {
+      "item": "white_dye"
+    }
+  },
+  "result": {
+    "item": "white_stained_glass",
+    "count": 8
+  }
+}

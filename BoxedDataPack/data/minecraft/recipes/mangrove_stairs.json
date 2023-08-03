@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mangrove_planks"
+    }
+  },
+  "result": {
+    "item": "mangrove_stairs",
+    "count": 8
+  }
+}

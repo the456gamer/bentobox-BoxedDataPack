@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "sandstone",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sand"
+    }
+  },
+  "result": {
+    "item": "sandstone"
+  }
+}

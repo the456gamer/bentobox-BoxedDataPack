@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "ladder"
+    },
+    "title": "Climbing the Ranks",
+    "description": "Climb up a ladder",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/poke_poke",
+  "criteria": {
+    "scaffolding": {
+      "trigger": "enter_block",
+      "conditions": {
+        "block": "ladder"
+      }
+    }
+  }
+}

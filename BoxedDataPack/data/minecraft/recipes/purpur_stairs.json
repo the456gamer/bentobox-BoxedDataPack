@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "purpur_block"
+      },
+      {
+        "item": "purpur_pillar"
+      }
+    ]
+  },
+  "result": {
+    "item": "purpur_stairs",
+    "count": 6
+  }
+}

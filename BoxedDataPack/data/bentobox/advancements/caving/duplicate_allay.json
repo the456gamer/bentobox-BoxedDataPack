@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "amethyst_shard"
+    },
+    "title": "Miracle Copycat",
+    "description": "Duplicate an allay",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/amethyst_shard",
+  "criteria": {
+    "duplicate": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:allay",
+              "nbt": "{CanDuplicate:0b,DuplicationCooldown:6000L}"
+            }
+          }
+        ],
+        "item": {
+          "items": [
+            "amethyst_shard"
+          ]
+        }
+      }
+    }
+  }
+}

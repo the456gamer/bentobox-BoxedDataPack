@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "gray_dye",
+  "ingredients": [
+    {
+      "item": "black_dye"
+    },
+    {
+      "item": "white_dye"
+    }
+  ],
+  "result": {
+    "item": "gray_dye",
+    "count": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "emerald"
+    },
+    "title": "Fatal Floor",
+    "description": "Be bitten by evoker fangs",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/mansion",
+  "criteria": {
+    "evoker_fangs": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "evoker_fangs"
+            }
+          }
+        }
+      }
+    }
+  }
+}

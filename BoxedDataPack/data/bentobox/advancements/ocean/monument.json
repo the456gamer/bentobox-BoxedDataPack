@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "prismarine"
+    },
+    "title": "Out of Your Comfort Zone",
+    "description": "Enter an ocean monument",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/ocean_ruins",
+  "criteria": {
+    "monument": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "monument"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "music_disc_cat"
+    },
+    "title": "Before streaming",
+    "description": "Obtain a music disc",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/deflect_arrow",
+  "criteria": {
+    "music_disc": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "music_discs"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "bow"
+    },
+    "title": {
+      "translate": "advancements.adventure.shoot_arrow.title"
+    },
+    "description": "Shoot something with an arrow",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/kill_monster",
+  "criteria": {
+    "shot_arrow": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "arrow"
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

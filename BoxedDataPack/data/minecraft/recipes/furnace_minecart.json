@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "furnace_minecart",
+  "ingredients": [
+    {
+      "item": "furnace"
+    },
+    {
+      "item": "minecart"
+    }
+  ],
+  "result": {
+    "item": "furnace_minecart"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tube_coral_block"
+    },
+    "title": "Living Cubes",
+    "description": "Is it a mob or a block?",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/coral_fan",
+  "criteria": {
+    "coral_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bentobox:coral_blocks"
+          }
+        ]
+      }
+    }
+  }
+}

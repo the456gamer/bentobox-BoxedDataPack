@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "dried_kelp_block"
+    },
+    "title": "Sushi Block",
+    "description": "Craft a block of dried kelp",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/dried_kelp",
+  "criteria": {
+    "dried_kelp_block": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dried_kelp_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

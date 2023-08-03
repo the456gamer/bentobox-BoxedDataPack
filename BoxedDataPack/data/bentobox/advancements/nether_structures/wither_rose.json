@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "wither_rose"
+    },
+    "title": "Morbid Bloom",
+    "description": "Collect a wither rose",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:nether_structures/summon_wither",
+  "criteria": {
+    "wither_rose": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wither_rose"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

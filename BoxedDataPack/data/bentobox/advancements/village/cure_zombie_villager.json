@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "golden_apple"
+    },
+    "title": {
+      "translate": "advancements.story.cure_zombie_villager.title"
+    },
+    "description": "Weaken and then cure a zombie villager",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:village/root",
+  "criteria": {
+    "cured_zombie": {
+      "trigger": "cured_zombie_villager"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "birch_planks"
+    }
+  },
+  "result": {
+    "item": "birch_pressure_plate",
+    "count": 4
+  }
+}

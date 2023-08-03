@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:turtle_helmet"
+    },
+    "title": "Hard Hat",
+    "description": "Wear a turtle shell",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/scute",
+  "criteria": {
+    "turtle_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "turtle_helmet"
+              ]
+            }
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:turtle_helmet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

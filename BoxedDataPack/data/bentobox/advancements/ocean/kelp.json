@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "kelp"
+    },
+    "title": "Kelp! Kelp!",
+    "description": "Collect some kelp",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/green_in_the_blue",
+  "criteria": {
+    "kelp": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kelp"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

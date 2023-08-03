@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:dispenser"
+    },
+    "title": "Dispense This!",
+    "description": "Craft and place a dispenser",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:redstone/dropper",
+  "criteria": {
+    "dispenser": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:dispenser"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

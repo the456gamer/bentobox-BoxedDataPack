@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "arrow"
+    },
+    "title": {
+      "translate": "advancements.story.deflect_arrow.title"
+    },
+    "description": "Deflect a projectile with a shield",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/shield",
+  "criteria": {
+    "block_projectile": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "is_projectile"
+              }
+            ]
+          },
+          "blocked": true
+        }
+      }
+    }
+  }
+}

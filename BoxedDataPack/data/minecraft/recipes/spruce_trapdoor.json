@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spruce_planks"
+    }
+  },
+  "result": {
+    "item": "spruce_trapdoor",
+    "count": 6
+  }
+}

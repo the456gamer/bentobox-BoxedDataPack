@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:terracotta"
+    },
+    "title": "Earthen Treasure Hunter",
+    "description": "Obtain terracotta",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/clay_have",
+  "criteria": {
+    "terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:terracotta"
+          }
+        ]
+      }
+    }
+  }
+}

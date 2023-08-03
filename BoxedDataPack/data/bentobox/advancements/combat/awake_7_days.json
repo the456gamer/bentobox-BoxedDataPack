@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "red_bed"
+    },
+    "title": "A Week Without Sleep",
+    "description": "Don't sleep or die for an in-game week",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/phantom_pains",
+  "criteria": {
+    "week": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "custom",
+                "stat": "time_since_rest",
+                "value": {
+                  "min": 168000
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

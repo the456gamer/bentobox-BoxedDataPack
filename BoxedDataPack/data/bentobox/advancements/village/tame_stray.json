@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "cod"
+    },
+    "title": "Timid Kitty",
+    "description": "Take in a stray cat",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:village/root",
+  "criteria": {
+    "cat": {
+      "trigger": "tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "cat"
+        }
+      }
+    }
+  }
+}

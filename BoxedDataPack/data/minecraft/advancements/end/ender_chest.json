@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "ender_chest"
+    },
+    "title": "Cross-Dimensional Storage",
+    "description": "Craft an ender chest",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:end/root",
+  "criteria": {
+    "ender_chest": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ender_chest"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

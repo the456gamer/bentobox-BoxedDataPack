@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "chest"
+    },
+    "title": "Normal Storage",
+    "description": "Craft a chest to store your items",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/planks",
+  "criteria": {
+    "chest": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "chest"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

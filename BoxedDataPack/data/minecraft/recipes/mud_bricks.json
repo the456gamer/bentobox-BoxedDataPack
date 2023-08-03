@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "mud_bricks",
+  "key": {
+    "#": {
+      "item": "packed_mud"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "item": "mud_bricks"
+  }
+}

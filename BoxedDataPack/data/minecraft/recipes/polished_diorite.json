@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "polished_diorite",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "diorite"
+    }
+  },
+  "result": {
+    "item": "polished_diorite",
+    "count": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "hopper",
+  "pattern": [
+    "I I",
+    "ICI",
+    " I "
+  ],
+  "key": {
+    "C": {
+      "tag": "bentobox:chests_and_barrels"
+    },
+    "I": {
+      "item": "iron_ingot"
+    }
+  },
+  "result": {
+    "item": "hopper"
+  }
+}

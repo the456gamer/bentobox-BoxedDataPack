@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "dead_bush"
+    },
+    "title": "Sticky",
+    "description": "Obtain a dead bush",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/husk",
+  "criteria": {
+    "dead_bush": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dead_bush"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:big_dripleaf"
+    },
+    "title": "Tipping Point",
+    "description": "Cause a big dripleaf to become unstable",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/lush_cave",
+  "criteria": {
+    "tilt_dripleaf": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:big_dripleaf",
+        "state": {
+          "tilt": "unstable"
+        }
+      }
+    }
+  }
+}

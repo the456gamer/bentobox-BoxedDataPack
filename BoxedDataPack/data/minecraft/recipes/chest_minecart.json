@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "chest_minecart",
+  "ingredients": [
+    {
+      "item": "chest"
+    },
+    {
+      "item": "minecart"
+    }
+  ],
+  "result": {
+    "item": "chest_minecart"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "chicken"
+    },
+    "title": "Belyaevian",
+    "description": "Breed foxes with berries",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/sweet_berries",
+  "criteria": {
+    "breed_fox": {
+      "trigger": "bred_animals",
+      "conditions": {
+        "parent": {
+          "type": "fox"
+        }
+      }
+    }
+  }
+}

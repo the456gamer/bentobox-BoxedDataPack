@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "feather"
+    },
+    "title": "Float like a butterfly, sting like a bee.",
+    "description": "Drink a potion of Slow Falling",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/phantom_pains",
+  "criteria": {
+    "slow_falling": {
+      "trigger": "effects_changed",
+      "conditions": {
+        "effects": {
+          "slow_falling": {}
+        }
+      }
+    }
+  }
+}

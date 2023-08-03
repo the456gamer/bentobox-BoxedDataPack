@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancements.nether.loot_bastion.title"
+    },
+    "description": "Loot a chest in a bastion remnant",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:nether_structures/bastion",
+  "criteria": {
+    "other": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_other"
+      }
+    },
+    "treasure": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_treasure"
+      }
+    },
+    "hoglin_stable": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_hoglin_stable"
+      }
+    },
+    "bridge": {
+      "trigger": "minecraft:player_generates_container_loot",
+      "conditions": {
+        "loot_table": "minecraft:chests/bastion_bridge"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "other",
+      "treasure",
+      "hoglin_stable",
+      "bridge"
+    ]
+  ]
+}

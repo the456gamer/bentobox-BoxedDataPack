@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bell"
+    },
+    "title": "You Rang?",
+    "description": "Sound a bell to alert a village of danger",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:village/have_bad_omen",
+  "criteria": {
+    "bell": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "custom",
+                "stat": "bell_ring",
+                "value": {
+                  "min": 1
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

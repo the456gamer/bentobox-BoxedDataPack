@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "brown_carpet"
+    },
+    "title": "Caravanable",
+    "description": "Tame a llama",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/best_friends_forever",
+  "criteria": {
+    "tame_llama": {
+      "trigger": "tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "#bentobox:llamas"
+        }
+      }
+    }
+  }
+}

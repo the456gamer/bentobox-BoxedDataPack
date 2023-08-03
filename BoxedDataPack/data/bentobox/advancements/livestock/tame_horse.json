@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "saddle"
+    },
+    "title": "Saddle Up",
+    "description": "Tame a horse",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/best_friends_forever",
+  "criteria": {
+    "horse": {
+      "trigger": "tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "#bentobox:horses"
+        }
+      }
+    }
+  }
+}

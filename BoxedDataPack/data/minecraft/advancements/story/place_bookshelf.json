@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": "Librarian",
+    "description": "Place a bookself to make your enchanting table stronger",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:story/enchant_item",
+  "criteria": {
+    "bookshelf": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:bookshelf"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

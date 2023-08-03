@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "bedrock"
+    },
+    "title": "Bedrock Bounder",
+    "description": "Reach rock bottom",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/lava_level",
+  "criteria": {
+    "-59": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "max": -59
+              }
+            },
+            "dimension": "overworld"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "oak_boat"
+    },
+    "title": "Ship Shape",
+    "description": "Ride a boat through the water",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/dolphins_grace",
+  "criteria": {
+    "water": {
+      "trigger": "enter_block",
+      "conditions": {
+        "block": "water",
+        "player": {
+          "vehicle": {
+            "type": "#bentobox:boats"
+          }
+        }
+      }
+    }
+  }
+}

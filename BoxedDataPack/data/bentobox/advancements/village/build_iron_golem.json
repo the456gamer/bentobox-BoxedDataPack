@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "title": {
+      "translate": "advancements.adventure.summon_iron_golem.title"
+    },
+    "description": "Summon an iron golem to help defend a village",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:village/pillaged",
+  "criteria": {
+    "iron_golem": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "iron_golem"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "bentobox:caving/spyglass",
+  "display": {
+    "icon": {
+      "item": "wheat_seeds"
+    },
+    "title": {
+      "translate": "advancements.adventure.spyglass_at_parrot.title"
+    },
+    "description": "Look at a parrot through a spyglass",
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "parrot": {
+      "trigger": "using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "predicate": {
+              "type_specific": {
+                "looking_at": {
+                  "type": "parrot"
+                },
+                "type": "player"
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "spyglass"
+          ]
+        }
+      }
+    }
+  }
+}

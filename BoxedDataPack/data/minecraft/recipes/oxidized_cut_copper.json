@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "oxidized_cut_copper",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oxidized_copper"
+    }
+  },
+  "result": {
+    "item": "oxidized_cut_copper",
+    "count": 4
+  }
+}

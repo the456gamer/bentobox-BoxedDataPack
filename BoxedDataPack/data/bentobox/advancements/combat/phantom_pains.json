@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "phantom_membrane"
+    },
+    "title": "Phantasm",
+    "description": "Hurt or be hurt by a phantom",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/root",
+  "criteria": {
+    "phantom_hurts": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "phantom"
+          }
+        }
+      }
+    },
+    "hurt_phantom": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "phantom"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "phantom_hurts",
+      "hurt_phantom"
+    ]
+  ]
+}

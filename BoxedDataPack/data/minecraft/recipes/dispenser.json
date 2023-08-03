@@ -1,0 +1,24 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "dispenser",
+  "pattern": [
+    "###",
+    "#X#",
+    "#R#"
+  ],
+  "key": {
+    "R": {
+      "item": "redstone"
+    },
+    "#": {
+      "item": "cobblestone"
+    },
+    "X": {
+      "tag": "bentobox:bows"
+    }
+  },
+  "result": {
+    "item": "dispenser"
+  }
+}

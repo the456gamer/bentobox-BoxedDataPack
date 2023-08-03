@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "jungle_trapdoor"
+    },
+    "title": "Under Here!",
+    "description": "Craft a wooden trapdoor",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:forestry/door",
+  "criteria": {
+    "trapdoor": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "wooden_trapdoors"
+          }
+        ]
+      }
+    }
+  }
+}

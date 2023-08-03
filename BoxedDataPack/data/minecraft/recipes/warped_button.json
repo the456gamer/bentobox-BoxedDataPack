@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "warped_planks"
+    }
+  ],
+  "result": {
+    "item": "warped_button",
+    "count": 4
+  }
+}

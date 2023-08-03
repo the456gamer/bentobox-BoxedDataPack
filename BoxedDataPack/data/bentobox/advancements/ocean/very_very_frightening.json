@@ -1,0 +1,26 @@
+{
+  "parent": "bentobox:ocean/throw_trident",
+  "display": {
+    "icon": {
+      "item": "emerald"
+    },
+    "title": {
+      "translate": "advancements.adventure.very_very_frightening.title"
+    },
+    "description": "Strike a villager with lightning",
+    "frame": "goal",
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "villager": {
+      "trigger": "channeled_lightning",
+      "conditions": {
+        "victims": [
+          {
+            "type": "villager"
+          }
+        ]
+      }
+    }
+  }
+}

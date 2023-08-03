@@ -1,0 +1,97 @@
+{
+  "display": {
+    "icon": {
+      "item": "andesite"
+    },
+    "title": "Master Geologist",
+    "description": "Gather all seven types of stone",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/at_diamond_level",
+  "criteria": {
+    "stone": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stone"
+            ]
+          }
+        ]
+      }
+    },
+    "granite": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "granite"
+            ]
+          }
+        ]
+      }
+    },
+    "diorite": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "diorite"
+            ]
+          }
+        ]
+      }
+    },
+    "andesite": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "andesite"
+            ]
+          }
+        ]
+      }
+    },
+    "deepslate": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "deepslate"
+            ]
+          }
+        ]
+      }
+    },
+    "tuff": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tuff"
+            ]
+          }
+        ]
+      }
+    },
+    "calcite": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "calcite"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

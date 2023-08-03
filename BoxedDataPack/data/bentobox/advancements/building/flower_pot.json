@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:flower_pot"
+    },
+    "title": "Pot-ty Gardener",
+    "description": "Plant something in a flower pot",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/brick",
+  "criteria": {
+    "pot_flower": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "custom",
+                "stat": "pot_flower",
+                "value": {
+                  "min": 1
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

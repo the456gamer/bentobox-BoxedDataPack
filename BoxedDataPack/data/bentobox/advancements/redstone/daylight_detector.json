@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:daylight_detector"
+    },
+    "title": "Solar Power",
+    "description": "Harness the power of the sun",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:redstone/observer",
+  "criteria": {
+    "daylight_detector": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:daylight_detector"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

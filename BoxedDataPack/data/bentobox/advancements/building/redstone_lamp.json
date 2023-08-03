@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "title": "Lighting the Way",
+    "description": "Light up the area with redstone lamps",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/glowstone",
+  "criteria": {
+    "redstone_lamp": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:redstone_lamp"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

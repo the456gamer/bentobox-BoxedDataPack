@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_leggings",
+      "nbt": "{Enchantments:[{id:'lure'}]}"
+    },
+    "title": "Sneaky Sprinter",
+    "description": "Sneak faster with Swift Sneak",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/enter_ancient_city",
+  "criteria": {
+    "swift_sneak": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_sneaking": true
+              },
+              "equipment": {
+                "legs": {
+                  "tag": "bentobox:leggings",
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:swift_sneak"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

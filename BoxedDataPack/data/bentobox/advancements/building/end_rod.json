@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:end_rod"
+    },
+    "title": "Glow-riffic Illumer",
+    "description": "Light up the area with end rods",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:building/sea_lantern",
+  "criteria": {
+    "end_rod": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:end_rod"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

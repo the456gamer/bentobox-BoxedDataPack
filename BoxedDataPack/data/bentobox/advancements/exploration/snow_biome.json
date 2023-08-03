@@ -1,0 +1,138 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:snow_block"
+    },
+    "title": "Winter Wonderland",
+    "description": "Enter a snowy biome",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/root",
+  "criteria": {
+    "snowy_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "snowy_plains"
+          }
+        }
+      }
+    },
+    "ice_spikes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "ice_spikes"
+          }
+        }
+      }
+    },
+    "snowy_taiga": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "snowy_taiga"
+          }
+        }
+      }
+    },
+    "snowy_beach": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "snowy_beach"
+          }
+        }
+      }
+    },
+    "grove": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "grove"
+          }
+        }
+      }
+    },
+    "snowy_slopes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "snowy_slopes"
+          }
+        }
+      }
+    },
+    "jagged_peaks": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "jagged_peaks"
+          }
+        }
+      }
+    },
+    "frozen_peaks": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "frozen_peaks"
+          }
+        }
+      }
+    },
+    "frozen_river": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "frozen_river"
+          }
+        }
+      }
+    },
+    "frozen_ocean": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "frozen_ocean"
+          }
+        }
+      }
+    },
+    "deep_frozen_ocean": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "deep_frozen_ocean"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "snowy_plains",
+      "ice_spikes",
+      "snowy_taiga",
+      "snowy_beach",
+      "grove",
+      "snowy_slopes",
+      "jagged_peaks",
+      "frozen_peaks",
+      "frozen_river",
+      "frozen_ocean",
+      "deep_frozen_ocean"
+    ]
+  ]
+}

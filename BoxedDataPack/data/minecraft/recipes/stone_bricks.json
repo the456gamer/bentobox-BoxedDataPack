@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "building",
+  "group": "stone_bricks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "stone"
+    }
+  },
+  "result": {
+    "item": "stone_bricks",
+    "count": 4
+  }
+}

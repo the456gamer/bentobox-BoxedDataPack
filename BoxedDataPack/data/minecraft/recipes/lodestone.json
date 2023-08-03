@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "S#S",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "bentobox:chiseled_stone"
+    },
+    "#": {
+      "item": "netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "lodestone"
+  }
+}

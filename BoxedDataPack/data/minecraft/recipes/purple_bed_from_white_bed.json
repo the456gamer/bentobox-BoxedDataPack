@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_bed",
+  "ingredients": [
+    {
+      "tag": "beds"
+    },
+    {
+      "item": "purple_dye"
+    }
+  ],
+  "result": {
+    "item": "purple_bed"
+  }
+}

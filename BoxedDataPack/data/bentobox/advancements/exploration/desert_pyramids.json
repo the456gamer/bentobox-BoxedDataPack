@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "chiseled_sandstone"
+    },
+    "title": "Grave Robber",
+    "description": "Enter a desert temple",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/husk",
+  "criteria": {
+    "temple": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "desert_pyramid"
+          }
+        }
+      }
+    }
+  }
+}

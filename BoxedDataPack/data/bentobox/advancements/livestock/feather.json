@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "feather"
+    },
+    "title": "Pillow Stuffer",
+    "description": "Kill a bird for its feathers",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/kill_an_animal",
+  "criteria": {
+    "feather": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "feather"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

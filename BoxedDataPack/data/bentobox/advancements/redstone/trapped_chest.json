@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:trapped_chest"
+    },
+    "title": "It's a Trap!",
+    "description": "Rig a chest",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:redstone/tripwire",
+  "criteria": {
+    "trapped_chest": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:trapped_chest"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

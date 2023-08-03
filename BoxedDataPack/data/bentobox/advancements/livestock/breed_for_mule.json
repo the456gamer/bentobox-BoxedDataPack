@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "golden_carrot"
+    },
+    "title": "Artificial Selection",
+    "description": "Breed a horse and a donkey to make a mule",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/tame_horse",
+  "criteria": {
+    "mule": {
+      "trigger": "bred_animals",
+      "conditions": {
+        "parent": {
+          "type": "horse"
+        },
+        "partner": {
+          "type": "donkey"
+        }
+      }
+    }
+  }
+}

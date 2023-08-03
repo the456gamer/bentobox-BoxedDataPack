@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "title": "Lucky Charm",
+    "description": "Find a rabbit's foot",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:livestock/rabbit_hide",
+  "criteria": {
+    "rabbit_foot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rabbit_foot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

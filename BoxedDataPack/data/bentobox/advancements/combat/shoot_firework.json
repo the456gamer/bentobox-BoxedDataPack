@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "firework_rocket"
+    },
+    "title": "Worth Trying Once",
+    "description": "Shoot a firework with a crossbow",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:combat/ol_betsy",
+  "criteria": {
+    "firework": {
+      "trigger": "shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": [
+            "crossbow"
+          ],
+          "nbt": "{ChargedProjectiles: [{id:'firework_rocket'}]}"
+        }
+      }
+    }
+  }
+}

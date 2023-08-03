@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "mangrove_planks"
+    }
+  },
+  "result": {
+    "item": "mangrove_pressure_plate",
+    "count": 4
+  }
+}

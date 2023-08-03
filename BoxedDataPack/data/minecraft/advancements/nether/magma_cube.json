@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "magma_cream"
+    },
+    "title": "Heated Core",
+    "description": "Kill a magma cube",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:nether/basalt_delta",
+  "criteria": {
+    "magma_cube": {
+      "trigger": "player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "magma_cube"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "emerald_ore"
+    },
+    "title": "Buried Currency",
+    "description": "Mine emerald ore with Silk Touch",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/mountain",
+  "criteria": {
+    "emerald": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "emerald_ores"
+          }
+        ]
+      }
+    }
+  }
+}

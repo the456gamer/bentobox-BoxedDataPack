@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "gravel"
+    },
+    "title": "Gravel Graveyard",
+    "description": "Suffocate in gravel",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/root",
+  "criteria": {
+    "gravel": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "player": {
+          "location": {
+            "block": {
+              "blocks": [
+                "gravel"
+              ]
+            }
+          }
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "bentobox:in_wall"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "ice"
+    },
+    "title": "On Thin Ice",
+    "description": "Use Frost Walker to walk on water",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/depth_strider",
+  "criteria": {
+    "frost_walker": {
+      "trigger": "location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "stepping_on": {
+                "block": {
+                  "blocks": [
+                    "frosted_ice"
+                  ]
+                }
+              },
+              "equipment": {
+                "feet": {
+                  "tag": "bentobox:boots",
+                  "enchantments": [
+                    {
+                      "enchantment": "frost_walker"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

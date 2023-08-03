@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "golden_boots",
+      "nbt": "{Enchantments:[{id:'lure'}]}"
+    },
+    "title": "Soul Assistance",
+    "description": "Wear down your soles with Soul Speed",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:nether/soul_sand",
+  "criteria": {
+    "soul_speed": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "tag": "soul_speed_blocks"
+            }
+          },
+          "equipment": {
+            "feet": {
+              "tag": "bentobox:boots",
+              "enchantments": [
+                {
+                  "enchantment": "soul_speed"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

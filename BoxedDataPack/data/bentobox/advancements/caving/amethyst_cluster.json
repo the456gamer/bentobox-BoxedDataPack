@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "amethyst_cluster"
+    },
+    "title": "Crystal Gatherer",
+    "description": "Collect a cluster of crystals",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:caving/amethyst_block",
+  "criteria": {
+    "cluster": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "amethyst_cluster"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

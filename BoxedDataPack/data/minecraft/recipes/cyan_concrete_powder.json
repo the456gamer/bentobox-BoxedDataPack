@@ -1,0 +1,38 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "concrete_powder",
+  "ingredients": [
+    {
+      "item": "cyan_dye"
+    },
+    {
+      "tag": "sand"
+    },
+    {
+      "tag": "sand"
+    },
+    {
+      "tag": "sand"
+    },
+    {
+      "tag": "sand"
+    },
+    {
+      "item": "gravel"
+    },
+    {
+      "item": "gravel"
+    },
+    {
+      "item": "gravel"
+    },
+    {
+      "item": "gravel"
+    }
+  ],
+  "result": {
+    "item": "cyan_concrete_powder",
+    "count": 8
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "acacia_planks"
+    }
+  },
+  "result": {
+    "item": "acacia_trapdoor",
+    "count": 6
+  }
+}

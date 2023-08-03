@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "category": "building",
+  "group": "diorite",
+  "ingredients": [
+    {
+      "item": "quartz"
+    },
+    {
+      "item": "cobblestone"
+    }
+  ],
+  "result": {
+    "item": "diorite"
+  }
+}

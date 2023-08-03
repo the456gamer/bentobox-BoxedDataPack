@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "birch_planks"
+    }
+  ],
+  "result": {
+    "item": "birch_button",
+    "count": 4
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dried_kelp"
+    },
+    "title": "Speed-Eating",
+    "description": "Eat dried kelp",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/kelp",
+  "criteria": {
+    "dried_kelp": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "dried_kelp"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dark_oak_planks"
+    },
+    "title": "Pariahs",
+    "description": "Enter a woodland mansion",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:exploration/dark_forest_find",
+  "criteria": {
+    "mansion": {
+      "trigger": "location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "mansion"
+          }
+        }
+      }
+    }
+  }
+}

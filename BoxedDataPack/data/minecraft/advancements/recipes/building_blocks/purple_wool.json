@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:wool"
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:purple_wool"
+      }
+    },
+    "has_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "bentobox:purple_wool"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wool",
+      "has_recipe",
+      "has_recipe2"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:purple_wool",
+      "bentobox:purple_wool"
+    ]
+  }
+}

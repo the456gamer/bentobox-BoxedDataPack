@@ -1,0 +1,100 @@
+{
+  "parent": "minecraft:nether/ride_strider",
+  "criteria": {
+    "basalt_deltas": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "basalt_deltas"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "location"
+    },
+    "crimson_forest": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "crimson_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "location"
+    },
+    "nether_wastes": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "nether_wastes"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "location"
+    },
+    "soul_sand_valley": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "soul_sand_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "location"
+    },
+    "warped_forest": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "warped_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.nether.explore_nether.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "netherite_boots"
+    },
+    "title": {
+      "translate": "advancements.nether.explore_nether.title"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

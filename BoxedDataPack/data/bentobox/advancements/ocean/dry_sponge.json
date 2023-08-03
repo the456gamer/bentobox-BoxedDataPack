@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "sponge"
+    },
+    "title": "Out to Dry",
+    "description": "Dry a wet sponge",
+    "announce_to_chat": false
+  },
+  "parent": "bentobox:ocean/elder_guardian",
+  "criteria": {
+    "sponge": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sponge"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
