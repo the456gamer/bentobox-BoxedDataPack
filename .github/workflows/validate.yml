@@ -1,4 +1,4 @@
-name: Assemble Datapack
+name: Validate Datapack
 on:
   push:
   pull_request:
