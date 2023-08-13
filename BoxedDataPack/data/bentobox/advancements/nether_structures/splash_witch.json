@@ -21,7 +21,7 @@
           "tags": [
             {
               "expected": true,
-              "id": "avoids_guardian_thorns"
+              "id": "bentobox:magic"
             }
           ]
         }
